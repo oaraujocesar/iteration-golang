@@ -1,10 +1,10 @@
 package iteration
 
+import "strings"
+
 func Repeat(letter string, times int) (repeatedChar string) {
 
-	for i := 0; i < times; i++ {
-		repeatedChar += letter
-	}
+	repeatedChar = strings.Repeat(letter, times)
 
 	return
 }
